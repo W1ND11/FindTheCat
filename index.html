@@ -1,0 +1,79 @@
+<!DOCTYPE hrml>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Find The Cat</title>
+    <meta charset="utf-8"/>
+    <script type="text/javascript" src="script.js"></script>
+    <link rel="icon" href="images/favicon.png" type="image/x-icon">
+</head>
+
+<body>
+    <span class="box" id="box1">
+        <h3 id="beluga">Beluga</h3>
+        <img onclick="secretCode()" id="belugaimg" src="images/beluga2.png"/>
+        <h5>Beluga is crying because he can't find his baby. Help him find his baby and you will get points!</h5>
+    </span>
+
+    <span class="box">
+        <h1 class="" id="text">Find The Cat</h1>
+        <button id="btnRestart" onclick="resetGame()">Restart</button>
+        <div id="board" onclick="showSquare(event)">
+            <div class="gamespace">
+                <span id="s1" class="square squares"></span>
+                <span id="s4" class="square squares"></span> 
+                <span id="s7" class="square squares"></span>
+                
+            </div>
+            <div class="gamespace">
+                <span id="s2" class="square squares"></span>
+                <span id="s5" class="square squares"></span> 
+                <span id="s8" class="square squares"></span> 
+                
+            </div>
+
+            <div class="gamespace">
+                <span id="s3" class="square squares"></span>
+                <span id="s6" class="square squares"></span> 
+                <span id="s9" class="square squares"></span>
+                
+            </div>
+            <div class="gamespace">
+                <span id="sr1" class="hint1 squareright squares"></span> 
+                <span id="sr2" class="hint2 squareright squares"></span> 
+                <span id="sr3" class="hint3 squareright squares"></span>
+            </div>
+        </div>
+    </span>
+    <span class="box">
+        <h2 class="inline tries">Tries: </h2><h2 class="inline triesNo" id="counter">0</h2>
+        <h2 class="inline triesNo">/3</h2>
+        <h2 class="inline scoreNo" id="score"></h2>
+        <h4 class="hintText">If you use Hint you will lose 30p !!!</h4><button id="btnHint" onclick="hintGame()">Hint</button>
+        <h6>Collect 1000 points to unlock the next level</h6>
+        <button id="nextLevel">Next Level</button>
+    </span>
+    
+
+
+        <audio id="cat1Sound">
+            <source src="sounds/cat1.wav" type="audio/mpeg">
+        </audio>
+        <audio id="cat2Sound">
+            <source src="sounds/cat2.wav" type="audio/mpeg">
+        </audio>
+        <audio id="cat3Sound">
+            <source src="sounds/cat3.wav" type="audio/mpeg">
+        </audio>
+        <audio id="cat4Sound">
+            <source src="sounds/cat4.wav" type="audio/mpeg">
+        </audio>
+
+        <audio id="fallSound">
+            <source src="sounds/worng.wav" type="audio/mpeg">
+        </audio>
+
+</body>
+
+</html>
