@@ -243,32 +243,30 @@ button {
     width: 330px;
 }
 
-@media screen and (max-width: 767px) and (orientation: landscape) {
-    /* Stiluri pentru rezoluții mai mici de 768px */
+@media screen and (max-width: 1000px) {
     .box {
-        height: 90%;
-        width: 80%;
+        height: 80%;
+        width: 90%;
         border: 2px rgba(7, 3, 1, 0.4) solid;
         background-color: rgba(7, 3, 1, 0.6);
-        margin: 15px;
+        margin: 5%;
     }
     #beluga {
-        font-size: 20px;
+        font-size: 90px;
         color: white;
         margin-left: 35%;
-        margin-top: 3%;
+        margin-top: 10%;
         -webkit-text-stroke: 0.4px black;
     }
     
     #belugaimg {
         width: 90%;
         height: 35%;
-        margin-top: 5%;
         margin-left: 5%;
     }
 
     h5 {
-        font-size: 15px;
+        font-size: 70px;
         color: white;
         margin: 5%;
         margin-top: 10%;
@@ -284,7 +282,7 @@ button {
         text-align: center;
         border: 3px rgba(0, 0, 0, 0.5) solid;
         background-color: white;
-        font-size: small;
+        font-size: 60px;
     }
 
     #btnRestart {
@@ -294,7 +292,7 @@ button {
         margin-left: 5%;
         margin-top: 3%;
         border: 3px rgba(0, 0, 0, 0.5) solid;
-        font-size: 15px;
+        font-size: 70px;
         color: rgba(0, 0, 0, 0.7);
         transition-property: background-color;
         transition-duration: 0.5s;
@@ -307,33 +305,49 @@ button {
         margin-left: 5%;
         margin-top: 3%;
         border: 3px rgba(0, 0, 0, 0.5) solid;
-        font-size: 15px;
+        font-size: 60px;
         color: rgba(0, 0, 0, 0.7);
     }
 
+    #board {
+        width: 100%;
+        height: 900px;
+    }
+
     .gamespace{
-        margin: 10px;
-        width: 95%;
-        height: 15%;
-        margin-left: 1px;
+        margin: 30px;
+        width: 99%;
+        height: 23%;
+        margin-left: 6%;
     }
 
     .square {
         width: 26%;
         height: 99%;
         background-image: url(images/shah1.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
         border: 2px rgb(255, 255, 255) solid;
-        margin: 2px;
+        margin: 10px;
     }
     
     .square:hover {
         width: 25.5%;
         height: 98.5%;
-       background-image: url(images/shah1.png);
+        background-image: url(images/shah1.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
         border: 2px rgb(193, 193, 193) solid;
         margin: 3px;
         display: inline-block;
         
+    }
+    .squareright {
+        width: 26%;
+        height: 99%;
+        margin: 10px;
     }
     
     .cat {
@@ -379,16 +393,17 @@ button {
     }
 
     #counter{
-        font-size: 15px;
+        font-size: 80px;
     }
 
     #score {
-        font-size: 15px;
+        width: 250px;
+        font-size: 80px;
         margin-left: 5%;
     }
 
     h2 {
-        font-size: 15px;
+        font-size: 80px;
     }
 
     h4 {
@@ -396,7 +411,7 @@ button {
         height: 5%;
         margin-left: 10%;
         color: rgb(143, 47, 47);
-        font-size: 10px;
+        font-size: 45px;
         background-color: white;
         border: 2px rgba(0, 0, 0, 0.5) solid;
         text-align: center;
@@ -408,217 +423,30 @@ button {
         height: 10%;
         margin-top: 3%;
         margin-left: 33%;
-        font-size: 20px;
+        font-size: 70px;
         color: rgba(0, 0, 0, 0.7);
         border: 2px white solid;
     }
 
     h6 {
-        font-size: 15px;
+        font-size: 80px;
         color: white;
         margin-left: 10%;
         margin-right: 10%;
-        margin-top: 40%;
+        margin-top: 20%;
         -webkit-text-stroke: 0.4px black;
     }
 
     #nextLevel {
         width: 30%;
         height: 5%;
-        font-size: 6px;
+        font-size: 30px;
         margin-left: 60%;
     }
 } 
     
 
-@media screen and (min-width: 768px) and (max-width: 1023px){
-    .box {
-        display: inline-block;
-        height: 90%;
-        width: 27%;
-        border: 3px rgba(7, 3, 1, 0.4) solid;
-        background-color: rgba(7, 3, 1, 0.6);
-        vertical-align: top;
-        margin: 15px;
-        flex-wrap: wrap;
-    }
-    #beluga {
-        font-size: 20px;
-        color: white;
-        margin-left: 35%;
-        margin-top: 3%;
-        -webkit-text-stroke: 0.4px black;
-    }
-    
-    #belugaimg {
-        width: 90%;
-        height: 35%;
-        margin-top: 5%;
-        margin-left: 5%;
-    }
 
-    h5 {
-        font-size: 15px;
-        color: white;
-        margin: 5%;
-        margin-top: 10%;
-        -webkit-text-stroke: 0.4px black;
-    }
-
-    h1 {
-        width: 60%;
-        height: 5%;
-        color: rgba(0, 0, 0, 0.7);
-        margin-left: 20%;
-        margin-top: 3%;
-        text-align: center;
-        border: 3px rgba(0, 0, 0, 0.5) solid;
-        background-color: white;
-        font-size: small;
-    }
-
-    #btnRestart {
-        background-color: white;
-        width: 90%;
-        height: 10%;
-        margin-left: 5%;
-        margin-top: 3%;
-        border: 3px rgba(0, 0, 0, 0.5) solid;
-        font-size: 15px;
-        color: rgba(0, 0, 0, 0.7);
-        transition-property: background-color;
-        transition-duration: 0.5s;
-        transition-delay: 0.1s;
-    }
-    #btnRestart:hover {
-        background-color: rgba(255, 255, 255, 0.667);
-        width: 90%;
-        height: 10%;
-        margin-left: 5%;
-        margin-top: 3%;
-        border: 3px rgba(0, 0, 0, 0.5) solid;
-        font-size: 15px;
-        color: rgba(0, 0, 0, 0.7);
-    }
-
-    .gamespace{
-        margin: 10px;
-        width: 95%;
-        height: 15%;
-        margin-left: 1px;
-    }
-
-    .square {
-        width: 26%;
-        height: 99%;
-        background-image: url(images/shah1.png);
-        border: 2px rgb(255, 255, 255) solid;
-        margin: 2px;
-    }
-    
-    .square:hover {
-        width: 25.5%;
-        height: 98.5%;
-       background-image: url(images/shah1.png);
-        border: 2px rgb(193, 193, 193) solid;
-        margin: 3px;
-        display: inline-block;
-        
-    }
-    
-    .cat {
-        width: 26%;
-        height: 99%;
-        background-color: rgba(255, 255, 255, 0.7);
-        background-image: url("images/cat.png");
-        background-size: cover;
-        display: inline-block;
-        margin: 2px;
-    }
-    .cat:hover   {
-        width: 26%;
-        height: 99%;
-        background-color: rgba(255, 255, 255, 0.7);
-        background-image: url("images/cat.png");
-        background-size: cover;
-        display: inline-block;
-        margin: 2px;
-    }
-    .lose {
-        width: 26%;
-        height: 99%;
-        background-color: rgba(255, 255, 255, 0.7);
-        background-image: url("images/X.png");
-        background-size: cover;
-        display: inline-block;
-        margin: 2px;
-    
-    }
-    .lose:hover {
-        width: 26%;
-        height: 99%;
-        background-color: rgba(255, 255, 255, 0.7);
-        background-image: url("images/X.png");
-        background-size: cover;
-        display: inline-block;
-        margin: 2px;
-    }
-
-    .tries {
-        color: rgba(203, 72, 255, 0.7);
-    }
-
-    #counter{
-        font-size: 15px;
-    }
-
-    #score {
-        font-size: 15px;
-        margin-left: 5%;
-    }
-
-    h2 {
-        font-size: 15px;
-    }
-
-    h4 {
-        width: 80%;
-        height: 5%;
-        margin-left: 10%;
-        color: rgb(143, 47, 47);
-        font-size: 10px;
-        background-color: white;
-        border: 2px rgba(0, 0, 0, 0.5) solid;
-        text-align: center;
-    }
-
-    #btnhint {
-        background-color: red;
-        width: 30%;
-        height: 10%;
-        margin-top: 3%;
-        margin-left: 33%;
-        font-size: 20px;
-        color: rgba(0, 0, 0, 0.7);
-        border: 2px white solid;
-    }
-
-    h6 {
-        font-size: 15px;
-        color: white;
-        margin-left: 10%;
-        margin-right: 10%;
-        margin-top: 40%;
-        -webkit-text-stroke: 0.4px black;
-    }
-
-    #nextLevel {
-        width: 30%;
-        height: 5%;
-        font-size: 6px;
-        margin-left: 60%;
-    }
-} 
 @media (min-width: 1024px) and (max-width: 1396px){
     .box {
         display: inline-block;
@@ -700,6 +528,9 @@ button {
         width: 26%;
         height: 99%;
         background-image: url(images/shah1.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
         border: 2px rgb(255, 255, 255) solid;
         margin: 2px;
     }
@@ -707,7 +538,10 @@ button {
     .square:hover {
         width: 25.5%;
         height: 98.5%;
-       background-image: url(images/shah1.png);
+        background-image: url(images/shah1.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
         border: 2px rgb(193, 193, 193) solid;
         margin: 3px;
         display: inline-block;
@@ -848,6 +682,9 @@ button {
         width: 29%;
         height: 90%;
         background-image: url(images/shah1.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
         border: 2px rgb(255, 255, 255) solid;
         margin: 2px;
     }
@@ -856,7 +693,10 @@ button {
         width: 28.5%;
         height: 89.5%;
        /* background-color: rgb(214, 0, 182); */
-       background-image: url(images/shah1.png);
+        background-image: url(images/shah1.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
         border: 2px rgb(193, 193, 193) solid;
         margin: 3px;
         display: inline-block;
