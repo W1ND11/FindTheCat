@@ -181,9 +181,4 @@ window.addEventListener("DOMContentLoaded", function () {
    if(reminder) {
       catRow++;
    }
-}
-
-
-
- 
- 
+} 
